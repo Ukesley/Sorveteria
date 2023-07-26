@@ -1,0 +1,116 @@
+.banner {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9DB79;
+    background-image: url(/public/assets/banner-home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner h1 {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 3px 4px 2px #3f3f3f;
+}
+
+/*////////////////////////////////// Seções ///////////////////////////////*/
+
+.secoes {
+    display: flex;
+}
+
+.secoes img {
+    width: 50%;
+}
+
+.secoes .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.texto h2 {
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.paragrafo-destaque {
+    margin-top: 0;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.paragrafo-menor {
+    font-size: 14px;
+    width: 390px;
+    
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 768px) {
+    
+    .banner h1 {
+        font-size: 60px;
+    }
+
+    /*////////////////////////////////////////////////*/
+
+    .secoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secoes img {
+        width: 100%;
+    }
+
+    .secao-inverte {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .texto {
+        padding: 80px 0;
+    }
+
+    .texto h2 {
+        font-size: 40px;
+    }
+
+    .texto .paragrafo-destaque {
+        font-size: 21px;
+        font-weight: bold;
+    }
+
+    .texto .paragrafo-menor {
+        font-size: 18px;
+        text-align: center;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    
+    .banner {
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /*/////////////////////////////////////////*/
+
+    .texto {
+        text-align: center;
+    }
+
+    .paragrafo-menor {
+        max-width: 250px;
+        line-height: 30px;
+    }
+}
